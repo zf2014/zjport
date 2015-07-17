@@ -40,16 +40,10 @@ module.exports = function(grunt) {
 
     grunt.registerTask('build', [
         'clean',
-        'useminPrepare',
-        // [useminprepare[以下3组命令], 是通过解析动态生成的]
-        'concat:generated',
-        'cssmin:generated',
-        'uglify:generated',
-        
-        'copy:dist',
-        'filerev',
-        'usemin'
+      
+        'copy:dist'
     ]);
+
 
 
 };
